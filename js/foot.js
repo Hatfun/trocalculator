@@ -674,6 +674,18 @@ function StAllCalc()
 	if(EquipNumSearch(1214)){
 		n_tok[32] += n_A_HEAD_DEF_PLUS;
 	}
+	// Prison Uniform + Thief Handcuff - ATK + 1 for every refine of Prison Uniform
+	if(EquipNumSearch(1683)) {
+		n_tok[17] += n_A_BODY_DEF_PLUS;
+	}
+	// Thief Handcuff + Shackles - MAXSP + 1% for every refine level on Shackles
+	if(EquipNumSearch(1685)) {
+		n_tok[16] += n_A_SHOES_DEF_PLUS;
+	}
+	// Prison Uniform - [For every refine] HIT + 1
+	if (EquipNumSearch(1681)) {
+		n_tok[8] += n_A_BODY_DEF_PLUS;
+	}
 	//Jade Rabbit Hat -[Loa] - 2017-07-03
 	if(EquipNumSearch(1218) && n_A_HEAD_DEF_PLUS > 4){
 		n_tok[17] += n_A_HEAD_DEF_PLUS - 4;
@@ -2511,6 +2523,12 @@ n_A_MaxHP += SkillSearch(156) * 200;
 	if(n_A_PassSkill3[9]){C_ATK += 50+(25*(n_A_PassSkill3[9]-1));}
 	if(n_A_PassSkill6[0] == 0 && n_A_PassSkill6[1] >= 1 && n_A_BodyZokusei==3){C_ATK += n_A_PassSkill6[1] *10;}
 
+	// Thief Handcuff
+	if (EquipNumSearch(1682)) {C_ATK += 5;}
+	// Prison Uniform + Thief Handcuff - ATK + 1 for every refine of Prison Uniform
+	if(EquipNumSearch(1683)) {
+		C_ATK += n_A_BODY_DEF_PLUS;
+	}
 	//Wakwak Card - For every 10 Base STR, ATK + 5
 	if(CardNumSearch(560)){
 		C_ATK += 5 * Math.floor(SU_STR / 10);
