@@ -1723,6 +1723,10 @@ ItemOBJ = [
 ,[1678,2,94,150,4,0,50,40,"Ceremonial Sword","",0,20,6,89,15,12,10,8,10,5161,25,0]
 ,[1679,60,121,6,0,1,300,80,"Engraved Armor","",0,78,10,0]
 ,[1680,3,121,330,4,1,250,70,"Heavy Sword","","5% chance to auto-cast level 1 [Critical Wounds] when using [Head Crush]<br><b>[Every Refine Level]</b><br>Decreases cast time of [Charge Attack] by 3%<br><b>[Refine Rate 9~10]</b><br>Increase [Critical Wounds] level to 2",5260,30,5308,20,0]
+,[1681,60,0,5,0,1,50,40,"Prison Uniform","","[For every refine]<br>HIT+1<br>",159,20,15,5,9,5,0]
+,[1682,64,0,0,0,1,100,40,"Thief Handcuff","","",0]
+,[1683,100,0,0,0,0,0,0,"Prison Uniform + Thief Handcuff","","Atk + 1 for every refine of Prison Uniform",0]
+,[1684,100,0,0,0,0,0,0,"Prison Uniform + Thief Handcuff + Shackles + Bloody Shackle Ball","",0,121,10,126,10,67,10,69,10,68,10,15,5,9,5,5,5,0]
 ];
 
 
@@ -3438,6 +3442,10 @@ ItemID = [
 ,[1678,1,13440]
 ,[1679,1,15066]
 ,[1680,1,1195]
+,[1681,1,21136]
+,[1682,1,21137]
+,[1683,2,21136,21137]
+,[1684,2,21136,21137,2408,2655]
 ];
 
 /*
@@ -4054,6 +4062,8 @@ w_SE = [[737,436,475,"NULL"]
 ,[1669,1667,644,"NULL"] //Custom TalonRO - 2018-07-13 - Love Guard + Staff of Recovery [NattWara]
 ,[1670,1667,863,"NULL"] //Custom TalonRO - 2018-07-13 - Love Guard + Holy Stick [NattWara]
 ,[1673,899,1376,"NULL"] //Custom TalonRO - 2018-07-26 - Valorous Gladiator Blade + Aegis Shield [Amor]
+,[1683,1681,1682,"NULL"]
+,[1684,1681,1682,323,725,"NULL"]
 ];
 SE_MAXnum = w_SE.length -1;
 for(var i=0;i<=SE_MAXnum;i++){
