@@ -6908,10 +6908,7 @@ if(CardNumSearch(555)){
 	if(n_B_KYOUKA[0])
 		n_B[8] += 2 + n_B_KYOUKA[0];
 
-	//[2018-08-03 - Fix NPC Flee Up to pre-renewal mechanic] [NattWara]
-	if(n_B_KYOUKA[5])
-		n_B[8] = n_B[8] * (2 + (0.2 * n_B_KYOUKA[5]));
-
+	// Quagmire agi debuff
 	if(n_B_IJYOU[1]){
 		var w;
 		var w2;
@@ -6927,7 +6924,6 @@ if(CardNumSearch(555)){
 		else
 			n_B[8] -= w;
 	}
-
 	if(n_B[19] == 0){
 		if(n_B_IJYOU[11]){
 			n_B[8] -= (n_B_IJYOU[11] + 2);
@@ -7144,12 +7140,12 @@ if(n_B_IJYOU[1]){
 		}
 	}
 
-	//[2018-08-03 - Fix NPC Flee Up to pre-renewal mechanic] [NattWara]
-	/*
-	if(n_B_KYOUKA[5])
-		n_B[27] = n_B[27] * 2;
+	/* [2020-04-18] - Fix NPC Flee Up as described in iROWiki [Hatfun]
+	   The boost to flee is based on a percent increase of the caster's agility.
 	*/
 
+	if(n_B_KYOUKA[5])
+		n_B[27] += n_B[8] * (2 + (0.2 * n_B_KYOUKA[5]));
 	if(n_B_IJYOU[17]){
 		n_B[27] -= 50;
 		if(n_B[27] < 0)
@@ -7226,7 +7222,6 @@ if(n_B_IJYOU[1]){
 			}
 		}
 	}
-
 
 	n_B[21] = n_B[27] + 20;
 	n_B[22] = n_B[26] + 75;
