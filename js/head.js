@@ -7220,9 +7220,8 @@ if(n_B_IJYOU[1]){
 
 	/* [2020-04-18] - FLEE UP [Hatfun]
 	   From rAthena code, it seems to just be FLEE +100%, so just 2x
-	   Keeping n_B_KYOKA[5] as an integer value instead of boolean to keep URL compatibility
+	   Keeping n_B_KYOUKA[5] as an integer value instead of boolean to keep URL compatibility
 	*/
-	console.log(n_B_KYOUKA[5]);
 	if(n_B_KYOUKA[5] > 0)
 		n_B[27] *= 2;
 
