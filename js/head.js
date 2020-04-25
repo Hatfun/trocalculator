@@ -6631,7 +6631,6 @@ with(document.calcForm){
 		html_SKILL[3] = '<input type="checkbox" name="B_KYOUKA3"onClick="calc()|Click_AK(1)">';
 		html_SKILL[4] = '<input type="checkbox" name="B_KYOUKA4"onClick="calc()|Click_AK(1)">';
 		html_SKILL[5] = '<input type="checkbox" name="B_KYOUKA5"onClick="calc()|Click_AK(1)">';
-		//html_SKILL[5] = '<select name="B_KYOUKA5"onChange="calc()|Click_AK(1)"></select>';
 		html_SKILL[6] = '<select name="B_KYOUKA6"onChange="calc()|Click_AK(1)"></select>';
 		html_SKILL[7] = '<select name="B_KYOUKA7"onChange="calc()|Click_AK(1)"></select>';
 		html_SKILL[8] = '<select name="B_KYOUKA8"onChange="calc()|Click_AK(1)"></select>';
