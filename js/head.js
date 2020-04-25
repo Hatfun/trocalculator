@@ -6650,7 +6650,6 @@ with(document.calcForm){
 			for(i=2;i<=9;i++)
 				myInnerHtml("ID_Kb"+i,html_SKILL[i],0);
 			for(i=0;i<=5;i++){
-				//B_KYOUKA5.options[i] = new Option(i,i);
 				B_KYOUKA7.options[i] = new Option(i,i);
 				B_KYOUKA8.options[i] = new Option(i,i);
 			}
